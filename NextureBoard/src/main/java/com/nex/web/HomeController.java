@@ -1,4 +1,4 @@
-package com.nex.web.home;
+package com.nex.web;
 
 import java.text.DateFormat;
 import java.util.Date;
