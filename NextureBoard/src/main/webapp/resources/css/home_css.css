@@ -1,0 +1,112 @@
+@CHARSET "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+ html, body {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin:0;
+      padding:0;
+      font-family: 'Nanum Pen Script', cursive;
+   }
+#outside{
+	width:100%;
+	background-color: rgb(105, 156, 239);
+	position:absolute;	
+	
+  top:0;right:0;bottom:0;left:0;
+  display:-webkit-box;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+  -webkit-align-items:center;
+  -webkit-justify-content:center;
+
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+  -moz-box-pack:center;
+  -moz-box-align:center;
+  -ms-box-pack:center;
+  -ms-box-align:center;
+  
+
+   background: url("/web/resources/image/cherry_blossoms.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+	
+
+#main_background{
+	background-color: rgba(254, 238, 237,0.7);
+	position: relative;
+}
+ #login_logo, #id_form, #pw_form, #data_result, #login_result{
+	 width : 80%;
+ 	 margin:4% 10%;
+ 	 float:left;
+ }
+ .button_control{
+ 	width:40%;
+ 	margin : 0 5%;
+ 	height:50px;
+ 	float: left;
+ 	font-family: 'Nanum Pen Script', cursive;
+ 	font-size: 1.5em;
+ }
+ #login_result{
+ 	text-align: center;
+ }
+  #id_form, #pw_form, #data_result, #login_result{
+  	height : 50px;
+ 	font-size : 2em;
+  }
+  .form_input_control{
+ 	width:80%;
+ 	height:50px;
+ 	float : right;
+ 	font-family: 'Nanum Pen Script', cursive;
+ 	font-size: 1em;
+ }
+ 			 @media screen and (min-width:1px ) and (max-width:500px) {
+ 			 	 #login_logo{
+ 			 	 	height : 100px;
+ 			 	 }
+                #main_background{
+					width : 350px;
+					height : 450px;
+				}
+            }
+            @media screen and (min-width: 501px) and  (max-width:1000px) {
+            	 #login_logo{
+ 			 	 	height : 100px;
+ 			 	 }
+ 			 	 #id_form, #pw_form, #data_result, #login_result{
+ 			  	}
+                #main_background{
+					width : 450px;
+					height : 500px;
+				}
+            }
+            @media screen and (min-width: 1000px) {
+            	 #login_logo{
+ 			 	 	height : 100px;
+ 			 	 }
+                #main_background{
+					width : 500px;
+					height : 550px;
+				}
+            }
+             @media screen and (min-width: 1600px) {
+            	 #login_logo{
+ 			 	 	height : 150px;
+ 			 	 }
+                #main_background{
+					width : 550px;
+					height : 600px;
+				}
+            }
