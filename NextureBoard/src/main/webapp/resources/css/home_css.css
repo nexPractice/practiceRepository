@@ -44,6 +44,7 @@
 #main_background{
 	background-color: rgba(254, 238, 237,0.7);
 	position: relative;
+	border-radius: 6%;
 }
  #login_logo, #id_form, #pw_form, #data_result, #login_result{
 	 width : 80%;
