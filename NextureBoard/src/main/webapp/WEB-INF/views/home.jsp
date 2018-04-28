@@ -13,13 +13,13 @@ pageEncoding="utf-8"%>
 			<div id="logo">
 				<img alt="넥스츄어코리아 로고" src="/web/resources/image/NEXTURE_logo.png" id="login_logo">
 			</div>
-			<form action="/web" method="post">
+			<form action="/web/login" method="post">
 				<div id="login_form">
 					<div id="id_form">
 						ID <input type="text" class="form_input_control" name="id">
 					</div>
 					<div id="pw_form">
-						PW <input type="password" class="form_input_control" password="pwd">
+						PW <input type="password" class="form_input_control" password="pwd" name="pwd">
 					</div>
 					<div id="data_result">
 						<input type="submit" value="LOGIN" class="button_control"/>
