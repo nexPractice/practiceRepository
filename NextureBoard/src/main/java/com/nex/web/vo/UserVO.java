@@ -3,7 +3,7 @@ package com.nex.web.vo;
 public class UserVO {
 	private String id;
 	private String pwd;
-	
+	private int hidden;
 	
 	public UserVO() {
 		super();
@@ -15,13 +15,10 @@ public class UserVO {
 		this.id = id;
 		this.pwd = pwd;
 	}
-	
-	public void setId(String id) {
+	public UserVO(String id, String pwd, int hidden) {
 		this.id = id;
-	}
-
-	public void setPwd(String pwd) {
 		this.pwd = pwd;
+		this.hidden = hidden;
 	}
 
 	public String getId() {
@@ -31,10 +28,14 @@ public class UserVO {
 		return pwd;
 	}
 	
+	public int getHidden() {
+		return hidden;
+	}
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return super.toString();
+		return "id : "+id+" pwd : "+pwd+" hidden : "+hidden;
 	}
 	
 }

@@ -12,19 +12,17 @@ import com.nex.web.vo.UserVO;
 public class LoginDAOImpl implements LoginDAO {
 
 	
-	@Autowired
+	@Inject
 	private SqlSession session;
 	
 	private static String namespace
 	= "org.zerock.mapper.LoginMapper";
 	
 	@Override
-	public String login(UserVO vo) {
+	public UserVO login(UserVO vo) {
 		// TODO Auto-generated method stub
 		LoginMapper mapper = session.getMapper(LoginMapper.class);
-		UserVO temp = mapper.login(vo);
-		if(temp != null) return "success";
-		else return null;
+		return mapper.login(vo);
 	}
 	
 

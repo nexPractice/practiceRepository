@@ -14,10 +14,9 @@ public class LoginServiceImpl implements LoginService {
 	private LoginDAO dao;
 	
 	@Override
-	public String login(UserVO vo) throws Exception{
+	public UserVO login(UserVO vo) throws Exception{
 		// TODO Auto-generated method stub
-		
-		return null;
+		return dao.login(vo);
 	}
 	
 	
