@@ -4,14 +4,14 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 
-import com.nex.web.dao.LoginDAO;
+import com.nex.web.dao.BalanceDAO;
 import com.nex.web.vo.UserVO;
 
 @Service
-public class LoginServiceImpl implements LoginService {
+public class BalanceServiceImpl implements BalanceService {
 
 	@Inject 
-	private LoginDAO dao;
+	private BalanceDAO dao;
 	
 	@Override
 	public UserVO login(UserVO vo) throws Exception{

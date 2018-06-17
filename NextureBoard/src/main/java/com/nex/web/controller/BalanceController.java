@@ -13,23 +13,23 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.nex.web.service.LoginService;
+import com.nex.web.service.BalanceService;
 import com.nex.web.vo.UserVO;
 
 /**
  * Handles requests for the application home page.
  */
 @Controller
-public class LoginController {
+public class BalanceController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
+	private static final Logger logger = LoggerFactory.getLogger(BalanceController.class);
 	
 	@Inject
-	LoginService service;
+	BalanceService service;
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@RequestMapping(value = "/balance", method = RequestMethod.POST)
 	public void login(String id,String pwd, Model model) throws Exception{
 		UserVO result = service.login(new UserVO(id, pwd));
 		if(result != null) {

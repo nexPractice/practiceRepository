@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.nex.web.vo.UserVO;
 
 @Repository
-public class LoginDAOImpl implements LoginDAO {
+public class BalanceDAOImpl implements BalanceDAO {
 
 	
 	@Inject

@@ -121,6 +121,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.41</version>
 		</dependency>   
+		
 		<!-- mybatis관련 설정 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>

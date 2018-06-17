@@ -40,6 +40,8 @@
         background-size: cover;
 }
 	
+table { border-collapse:collapse; }  
+tr, td { border:1px solid gray; }
 
 #main_background{
 	background-color: rgba(254, 238, 237,0.7);
@@ -52,12 +54,20 @@
  	 float:left;
  }
  .button_control{
+ 	width:80%;
+ 	margin : 0 10%;
+ 	height:50px;
+ 	float: left;
+ 	font-family: 'Nanum Pen Script', cursive;
+ 	font-size: 1.5em;
+ }
+  .button_control2{
  	width:40%;
  	margin : 0 5%;
  	height:50px;
  	float: left;
  	font-family: 'Nanum Pen Script', cursive;
- 	font-size: 1.5em;
+ 	font-size: 1em;
  }
  #login_result{
  	text-align: center;
